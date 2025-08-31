@@ -21,4 +21,8 @@ public class Usuario {
 
     @OneToOne
     private Persona persona;
+
+    @ManyToOne
+    @JoinColumn(name = "rol_id")
+    private Perfil perfil;
 }
